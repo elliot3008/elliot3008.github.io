@@ -23,6 +23,7 @@ nav{
     font-style: normal;
     position: fixed;
     box-shadow: 0 4px 10px gray;
+    z-index: 10;
 }
 
 .nav-logo{
@@ -50,7 +51,7 @@ ul li a{
     text-underline-offset: 20px;
 }
 
-a:hover{
+ul li a:hover{
     color: #AAAAAA;
 }
 
@@ -202,6 +203,67 @@ button{
 }
 
 /*About*/
+
+.projects-grid{
+    display: grid;
+    align-items: center;
+    margin: 50px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+}
+
+.projects{
+    box-shadow: 0 4px 10px gray;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    justify-self: center;
+    text-align: center;
+    width: 410px;
+    height: 420px;
+}
+
+.projects h3{
+    padding-top: 10px;
+}
+
+.projects p{
+    padding: 10px;
+    line-height: 30px;
+}
+
+.projects-grid a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.projects:hover{
+    translate: 0 -10px;
+    border: white;
+    box-shadow: 0 4px 20px black;
+}
+
+.projects-img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 410px;
+    height: 60%;
+}
+
+.git{
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.git-link{
+    text-decoration: none;
+    color: #007BFF;
+    transition: all 0.5s ease-in;
+}
+
+.git-link:hover{
+    text-decoration:underline #007BFF;
+}   
 
 /*Projects*/
 
