@@ -178,7 +178,59 @@ button{
     padding: 20px;
 }
 
+@media screen and (max-width:999px) {
+    .services{
+        flex-direction: column;
+    }
+
+    .svc-container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:549px) {
+    .home-intro-container{
+        height: 400px;
+        line-height: 70px;
+        font-size: 1rem;
+    }
+
+    .home-text-container h3,.home-text-container p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .home-intro-container{
+        height: 300px;
+        line-height: 60px;
+        font-size: 0.8rem;
+    }
+}
+
 /*Home*/
+
+.LR-container-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    gap: 80px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.left-about,.right-about{
+    width: 50%;
+    justify-content: center;
+}
+
+.left-about{
+    min-width: 400px;
+    margin: 0 20px;
+}
 
 .all-intro{
     text-align: center;
@@ -200,6 +252,32 @@ button{
 .myself{
     line-height: 50px;
     margin-right: 50px;
+}
+
+@media screen and (max-width:950px) {
+    .LR-container-about{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .myself{
+        margin-right: 0;
+    }
+
+    .left-about{
+        min-width: 0px;
+    }
+
+    .right-about{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .profile{
+        width: 240px;
+        height: 240px;
+    }
 }
 
 /*About*/
@@ -265,6 +343,74 @@ button{
     text-decoration:underline #007BFF;
 }   
 
+@media screen and (max-width:1439px) {
+    .projects-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .projects{
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .all-intro{
+        margin-bottom: 20px;
+    }
+
+    .projects-grid{
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
+
+    .projects{
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .all-intro{
+        margin-bottom: 20px;
+    }
+
+    .projects-grid{
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
+
+    .projects{
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .projects p{
+        display: none;
+    }
+
+    .projects h3{
+        padding: 20px;
+    }
+}
+
 /*Projects*/
 
 .LR-container{
@@ -295,6 +441,10 @@ button{
     margin: 20px 0;
 }
 
+.form-row-m{
+    display: none;
+}
+
 .form-row input {
     width: 50%;
     padding: 10px;
@@ -306,6 +456,7 @@ button{
     flex-direction: column;
     margin: 20px 0;
 }
+
 .form-group input,textarea{
     padding: 10px;
     border: none;
@@ -351,6 +502,57 @@ button:hover {
 
 .contact-p{
     font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+    .LR-container{
+        flex-direction: column;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .nav-logo{
+        display: none;
+    }
+
+    .nav-list{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .left{
+        width: 90%;
+        min-width: 0px;
+    }
+
+    .form-row{
+        display: none;
+    }
+
+    .form-row-m{
+        display: flex;
+    }
+
+    .form-row-m input{
+        width: 100%;
+        border: none;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:374px) {
+    nav{
+        font-size: 0.8rem;
+        height: 64px;
+    }
+
+    main{
+        padding-top: 80px;
+    }
 }
 
 /*Contact*/
